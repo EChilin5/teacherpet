@@ -50,6 +50,9 @@ export const NavBarComponent = () => {
                   <Nav.Link as={Link} to="/helpsection">
                     Help Section
                   </Nav.Link>
+                  <Nav.Link as={Link} to="/login">
+                    {user}
+                  </Nav.Link>
                 </Nav>
                 {user === "Log In" ? (
                   ""
@@ -68,7 +71,7 @@ export const NavBarComponent = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/mentor" element={<Mentor />} />
             <Route path="/mentorcalendar" element={<MentorCalendar />} />
-            <Route path="/mentor" element={<HelpSection />} />
+            <Route path="/helpsection" element={<HelpSection />} />
 
             <Route path="/login" element={<Login />} />
             {/* <Route path="/catalog/item/:id" element={<ItemDetail />} /> */}
