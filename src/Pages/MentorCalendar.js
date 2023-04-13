@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/esm/Button";
 import AppointmentForm from "../Components/MentorCalendarComponents/AppointmentForm";
+import CalendarChart from "../Components/MentorCalendarComponents/CalendarChart";
+import "react-calendar/dist/Calendar.css";
 
 const MentorCalendar = () => {
   return (
@@ -13,7 +15,9 @@ const MentorCalendar = () => {
         <h4>Approval rating: 5 stars</h4>
         <h4>Email: email@test.com</h4>
       </div>
-      <div className="calendar-section"></div>
+      <div className="calendar-section">
+        <CalendarChart />
+      </div>
       <div className="appointment-section">
         <AppointmentForm />
       </div>
