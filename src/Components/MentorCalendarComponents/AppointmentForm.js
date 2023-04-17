@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import "./AppointmentForm.css";
 
 const AppointmentForm = () => {
   return (
-    <div>
+    <div className="appointment-form-section">
       <div>
-        <h3>Book an Appointment</h3>
+        <h3>Email Mentor</h3>
       </div>
       <div>
         <Form>
@@ -34,10 +35,15 @@ const AppointmentForm = () => {
             <Form.Label>Time</Form.Label>
             <Form.Control type="time" placeholder="Time" />
           </Form.Group>
-
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <Form.Group className="mb-3" controlId="formNotes">
+            <Form.Label>Notes</Form.Label>
+            <Form.Control type="text" placeholder="Note" />
+          </Form.Group>
+          <div className="appoinment-form-btn">
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </div>
         </Form>
       </div>
     </div>

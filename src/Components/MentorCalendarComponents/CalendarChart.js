@@ -44,7 +44,6 @@ const CalendarChart = () => {
           <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
         </ScheduleComponent>
       </div>
-      <div className="text-center">Selected date: {date.toDateString()}</div>
     </div>
   );
 };

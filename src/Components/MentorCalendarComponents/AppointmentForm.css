@@ -1,0 +1,14 @@
+.appointment-form-section{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        background:linear-gradient(135deg, #42e695 0%,#3bb2b8 100%);
+    color: black;
+    margin:2em;
+    padding: 2em;
+}
+
+.appoinment-form-btn{
+    text-align: center;
+    margin: auto;
+}
+.appoinment-form-btn button{
+    background-color: black;}

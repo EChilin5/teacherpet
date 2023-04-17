@@ -1,0 +1,21 @@
+.mentor-calendar-main{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.mentor-calendar-name{
+    font-weight: 400;
+}
+
+.mentor-calendar-header{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.mentor-info{
+    flex:1;
+}
+mentor-image{
+    flex:1;
+}
