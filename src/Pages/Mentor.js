@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/esm/Button";
 import MentorCard from "../Components/MentorComponents/MentorCard";
+import "./Mentor.css";
 
 const Mentor = () => {
   let mentors = [
@@ -41,32 +42,70 @@ const Mentor = () => {
       subject: "Unknown Mastery",
       img: "",
     },
+    {
+      id: 7,
+      name: "Pa",
+      email: "pa@test.com",
+      subject: "History",
+      img: "",
+    },
+    {
+      id: 8,
+      name: "Pablo",
+      email: "pablo@test.com",
+      subject: "Advice",
+      img: "",
+    },
+    {
+      id: 9,
+      name: "Taco",
+      email: "taco@test.com",
+      subject: "Unknown Mastery",
+      img: "",
+    },
   ];
 
   return (
-    <div>
+    <div className="mentor-finder">
       <div>
         <h1>Find A Mentor</h1>
-        <div>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control type="text" placeholder="mentor" />
-            </Form.Group>
-          </Form>
+        <div className="mentor-searcher-section">
+          <div className="mentor-searcher-section-left">
+            <h5>Subjects</h5>
+            <hr className="dashed-line" />
+            <h6>Math</h6>
+            <h6>English</h6>
+            <h6>Science</h6>
+            <h6>Advice</h6>
+          </div>
+          <div className="mentor-searcher-section-right">
+            <div>
+              <Form>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Control type="text" placeholder="mentor" />
+                </Form.Group>
+              </Form>
+            </div>
+            <div className="mentor-columns">
+              {mentors.map((mentor) => {
+                return (
+                  <div className="columns">
+                    <div key={mentor.id}>
+                      <MentorCard mentors={mentor} />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mentor-button-section">
+              <Button>Previous</Button>
+              <Button>Next</Button>
+            </div>
+          </div>
         </div>
-        <div>
-          {mentors.map((mentor) => {
-            return (
-              <div key={mentor.id}>
-                <MentorCard mentors={mentor} />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div>
-        <Button>Previous</Button>
-        <Button>Next</Button>
       </div>
     </div>
   );

@@ -1,0 +1,80 @@
+.mentor-finder{
+    margin: 2em;
+    padding: 2em;
+}
+
+.mentor-finder h1{
+    margin-left: 1em;
+}
+
+.dashed-line{
+    border: 1px solid black;
+}
+
+.mentor-searcher-section{
+    display: flex;
+}
+
+.mentor-searcher-section-left{
+    flex:0.20;
+    background:linear-gradient(135deg, #e3e3e3 0%,#d0d1d3 100%);    color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em;
+    height:20em;
+}
+.mentor-searcher-section-right{
+    flex:1;
+}
+
+.mentor-columns {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.columns{
+    flex: 33.33%;
+
+}
+
+.mentor-button-section{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.mentor-button-section button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Move this to another css page after quick edits */
+.mentor-card{
+  background:linear-gradient(135deg, #07a2c9 0%,#036ED9 100%);;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.mentor-card:hover{
+    background:linear-gradient(135deg, #5ca72b 0%,#459522 100%);
+}
+
+.mentor-card-left{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 2px;
+}
+
+.mentor-card-description{
+    text-align: center;
+}
+.mentor-card-name{
+    text-align: center;
+}
+.mentor-card-email{
+    text-align: center;
+}
+.mentor-card-subject{
+    text-align: center;
+}

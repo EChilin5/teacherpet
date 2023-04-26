@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-page">
       <div className="container">
         <Image
           src="https://images.unsplash.com/photo-1556711905-b3f402e1ff80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt="home-page-image"
-          rounded
           className="fluid"
         />
       </div>
@@ -29,17 +29,17 @@ const HomePage = () => {
       </div>
       <div className="gethelp">
         <h3>Find Help</h3>
-        <div>
-          <ul>
-            <li>Math</li>
-            <li>English</li>
-            <li>Science</li>
-            <li>Advice</li>
-            <li>History</li>
-            <li>Etc</li>
-          </ul>
+        <div className="subject-columns">
+          <li className="subjects-columns">Math</li>
+          <li className="subjects-columns">English</li>
+          <li className="subjects-columns">Science</li>
+          <li className="subjects-columns">Advice</li>
+          <li className="subjects-columns">History</li>
+          <li className="subjects-columns">Etc</li>
         </div>
-        <Button>Help is on it's way</Button>
+        <div className="home-button-help">
+          <Button>Help is on it's way</Button>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+.home-page{
+    margin: 2em;
+    padding:2em;
+}
+
+.home-page img{
+    height:75vh;
+    width:100%
+}
+
+.about{
+    padding-top:1em;
+}
+
+.subject-columns {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.subjects-columns{
+    flex: 30%;
+}
+
+.subject-columns li{
+    background:linear-gradient(135deg, #07a2c9 0%,#036ED9 100%);
+    text-align: center;
+    margin: 0.2em;
+    padding:0.2em;
+}
+
+.subject-columns li:hover{
+    background:linear-gradient(135deg, #5ca72b 0%,#459522 100%);
+    margin-right: 3em;
+    margin-left: 3em;
+    transform: scale(1.2);
+}
+
+.home-button-help{
+    margin-top: 2em;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.home-button-help button{
+    font-size: x-large;
+}
+
+.home-button-help button{
+    background-color: #459522;
+}
